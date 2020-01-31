@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Detail } from './Pages/Detail';
 import { MoviesList } from './Components/MoviesList';
 import { SearchForm } from './Components/SearchForm';
 import { Title } from './Components/Title';
@@ -19,6 +20,16 @@ class App extends Component {
   }
 
   render() {
+
+    const url = new URL(document.location)
+    const hasId = url.searchParams.has('id')
+
+    if (hasId){
+      return <Detail id={url.searchParams.get('id')}/>
+    }
+  
+
+
     return (
       <div className="App">
         <Title>Search Movies</Title>
