@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { MoviesList } from "../Components/MoviesList";
-import { SearchForm } from "../Components/SearchForm";
-import { Title } from "../Components/Title";
+import { MoviesList } from "../components/MoviesList";
+import { SearchForm } from "../components/SearchForm";
+import { Title } from "../components/Title";
 
 export class Home extends Component {
 	state = { usedSearch: false, results: [] };
