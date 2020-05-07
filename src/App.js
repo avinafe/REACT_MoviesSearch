@@ -4,7 +4,7 @@ import { Detail } from "./pages/Detail";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import "./App.css";
-import "bulma/css/bulma.css";
+import "./assets/styles/bulma/css/bulma.css";
 
 class App extends Component {
 	render() {
